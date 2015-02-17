@@ -23,6 +23,7 @@ RUN apt-get update && apt-get install -y \
     build-essential libssl-dev libcurl4-openssl-dev \
     libconfuse-dev check python-virtualenv \
     python-dev libffi-dev protobuf-compiler\
+    libudev-dev \
 && rm -rf /var/lib/apt/lists/* # 20140918
 
 ADD assets/init /app/init
